@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="700.0" maxWidth="1250.0" minHeight="700.0" minWidth="1250.0" prefHeight="700.0" prefWidth="1250.0" style="-fx-background-color: #00897B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Public_views.Items_ViewController">
+   <children>
+      <AnchorPane fx:id="labelCont" layoutX="155.0" layoutY="47.0" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="1250.0" style="-fx-background-color: #263238;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="title_label" alignment="CENTER" layoutX="229.0" layoutY="17.0" text="الأصناف ( إضافة صنف _ تعديل  بيانات صنف _ حذف بيانات صنف _ طباعة تقرير بالأصناف )" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Calibri Bold" size="26.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="39.0" layoutY="14.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainCont" maxHeight="760.0" maxWidth="1250.0" minHeight="760.0" minWidth="1250.0" prefHeight="760.0" prefWidth="1250.0" style="-fx-background-color: #00897B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <VBox alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="760.0" prefWidth="1250.0" spacing="5.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="595.0" prefWidth="1240.0" spacing="5.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0" spacing="6.0" style="-fx-border-color: white;">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="95.0" prefWidth="417.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text="* اسم الصنف :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="25.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="item_name_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="40.0" prefHeight="42.0" prefWidth="371.0" style="-fx-background-color: #f1f1f1;" unFocusColor="#c3bbbb">
+                                       <font>
+                                          <Font name="Cambria Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="14.0" layoutY="108.0" prefHeight="76.0" prefWidth="329.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="323.0" style="-fx-background-radius: 2;" text="* نوع الوحدة:" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="25.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXComboBox fx:id="item_kind_Comb" editable="true" maxWidth="371.0" prefHeight="44.0" prefWidth="371.0" promptText="قائمة الأنواع" style="-fx-background-color: #f1f1f1;">
+                                       <padding>
+                                          <Insets left="10.0" right="5.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </JFXComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="97.0" prefWidth="329.0" style="-fx-border-color: white;">
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text="  سعر الوحدة ( كاش )" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="95.0" prefWidth="417.0" style="-fx-border-color: white;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text="* للمزا رع" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Calibri" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="item_farmer_cash_price_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="32.0" prefHeight="32.0" prefWidth="371.0" style="-fx-background-color: #f1f1f1;" unFocusColor="#c3bbbb">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="19.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="95.0" prefWidth="417.0" style="-fx-border-color: white;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text=" * للتجا ري" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Calibri" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="item_trade_cash_price_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="32.0" prefHeight="32.0" prefWidth="371.0" style="-fx-background-color: #f1f1f1;" unFocusColor="#c3bbbb">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="19.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="14.0" layoutY="224.0" prefHeight="97.0" prefWidth="329.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text="  سعر الوحدة ( أجل )" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="95.0" prefWidth="417.0" style="-fx-border-color: white;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text="* للمزا رع" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Calibri" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="item_farmer_Installment_price_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="32.0" prefHeight="32.0" prefWidth="371.0" style="-fx-background-color: #f1f1f1;" unFocusColor="#c3bbbb">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="19.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="95.0" prefWidth="417.0" style="-fx-border-color: white;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text=" * للتجا ري" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Calibri" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="item_trade_Installment_price_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="32.0" prefHeight="32.0" prefWidth="371.0" style="-fx-background-color: #f1f1f1;" unFocusColor="#c3bbbb">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="19.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="14.0" layoutY="347.0" prefHeight="97.0" prefWidth="329.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text="الحد الأدني و سعر الشراء للوحدة" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="95.0" prefWidth="417.0" style="-fx-border-color: white;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text=" * سعر الشراء" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Calibri" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="item_buy_price_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="32.0" prefHeight="32.0" prefWidth="371.0" style="-fx-background-color: #f1f1f1;" unFocusColor="#c3bbbb">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="19.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="95.0" prefWidth="417.0" style="-fx-border-color: white;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text="أدني حد للكمية" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Calibri" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="item_quantity_limit_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="32.0" prefHeight="32.0" prefWidth="371.0" style="-fx-background-color: #f1f1f1;" unFocusColor="#c3bbbb">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="19.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="11.0" layoutY="459.0" prefHeight="95.0" prefWidth="417.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="347.0" style="-fx-background-radius: 2;" text="ملاحظات" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="25.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="item_notes_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="32.0" prefHeight="32.0" prefWidth="371.0" style="-fx-background-color: #f1f1f1;" unFocusColor="#c3bbbb">
+                                       <font>
+                                          <Font name="Cambria Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="585.0" layoutY="10.0" prefHeight="200.0" prefWidth="950.0" spacing="2.0" style="-fx-border-color: white;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="948.0" spacing="10.0" style="-fx-border-width: 0 0 1 0;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="215.0" style="-fx-background-radius: 2;" text="بحث بكود الصنف :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="25.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="5.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="item_search_code_TxtF" alignment="CENTER" focusColor="#42a3e4" maxWidth="371.0" minHeight="40.0" prefHeight="46.0" prefWidth="115.0" style="-fx-background-color: #f1f1f1; -fx-border-color: black;" unFocusColor="#c3bbbb">
+                                       <font>
+                                          <Font name="Cambria Bold" size="19.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="12.0" layoutY="22.0" maxHeight="48.0" maxWidth="1.0" minHeight="48.0" minWidth="1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="48.0" prefWidth="1.0" style="-fx-background-radius: 2; -fx-border-color: white;" textFill="WHITE">
+                                       <font>
+                                          <Font name="(A) Arslan Wessam A (A) Arslan Wessam A" size="30.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="2.0" right="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="215.0" style="-fx-background-radius: 2;" text="بحث بأسم الصنف :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="25.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <JFXComboBox fx:id="item_search_name_Comb" editable="true" prefHeight="46.0" prefWidth="302.0" style="-fx-background-color: #f1f1f1; -fx-border-color: black;">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </JFXComboBox>
+                                    <JFXButton fx:id="clean_Btn" ripplerFill="#caddd2" style="-fx-background-color: #c9bfbf; -fx-background-radius: 50;" text=" " textFill="#c9bfbf">
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../Assets/icons/public_icons/clean.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="5.0" top="2.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="878.0">
+                                 <children>
+                                    <JFXCheckBox fx:id="select_all_Checkbox" checkedColor="#30ff3b" contentDisplay="GRAPHIC_ONLY" prefHeight="35.0" prefWidth="35.0" selected="true" text=" " unCheckedColor="#fffc00">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXCheckBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="60.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <TableView fx:id="items_store_Table" prefHeight="514.0" prefWidth="875.0" tableMenuButtonVisible="true">
+                                <columns>
+                                    <TableColumn fx:id="item_index_Colo" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" text="م" />
+                                  <TableColumn fx:id="item_selected_Colo" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" text="المحدد" />
+                                  <TableColumn fx:id="item_code_Colo" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" text="كود الصنف" />
+                                    <TableColumn fx:id="item_name_Colo" maxWidth="165.0" minWidth="165.0" prefWidth="165.0" text="اسم الصنف" />
+                                    <TableColumn fx:id="item_current_quantity_Colo" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" text="الكمية الحالية" />
+                                    <TableColumn fx:id="item_kind_Colo" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="نوع الوحدة" />
+                                    <TableColumn maxWidth="105.0" minWidth="105.0" prefWidth="105.0" text="سعر الوحدة ( كاش )">
+                                       <columns>
+                                          <TableColumn fx:id="item_farmer_cash_price_Colo" maxWidth="52.0" minWidth="52.0" prefWidth="52.0" text="المزارع" />
+                                          <TableColumn fx:id="item_trade_cash_price_Colo" maxWidth="53.0" minWidth="53.0" prefWidth="53.0" text="التجاري" />
+                                       </columns>
+                                    </TableColumn>
+                                    <TableColumn maxWidth="105.0" minWidth="105.0" prefWidth="105.0" text="  سعر الوحدة ( أجل )">
+                                       <columns>
+                                          <TableColumn fx:id="item_farmer_Installment_price_Colo" maxWidth="52.0" minWidth="52.0" prefWidth="52.0" text="المزارع" />
+                                          <TableColumn fx:id="item_trade_Installment_price_Colo" maxWidth="53.0" minWidth="53.0" prefWidth="53.0" text="التجاري" />
+                                       </columns>
+                                    </TableColumn>
+                                    <TableColumn fx:id="item_buy_Colo" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="سعر الشراء" />
+                                    <TableColumn fx:id="item_quantity_limit_Colo" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="حد  الكمية" />
+                                    <TableColumn fx:id="item_notes_Colo" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" text="الملاحظات" />
+                                </columns>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TableView>
+                              <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="128.0" prefWidth="1240.0" spacing="200.0">
+                                 <children>
+                                    <JFXButton fx:id="item_edit_Btn" alignment="CENTER" buttonType="RAISED" layoutX="635.0" layoutY="27.0" prefHeight="45.0" prefWidth="145.0" ripplerFill="#09f548" style="-fx-background-color: #311b92; -fx-background-radius: 50;" text="تعديل" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="23.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../Assets/icons/public_icons/edit%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="item_print_Btn" alignment="CENTER" buttonType="RAISED" layoutX="563.0" layoutY="27.0" prefHeight="45.0" prefWidth="145.0" ripplerFill="#09f548" style="-fx-background-color: #6a1b9a; -fx-background-radius: 50;" text="طباعة" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="23.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../Assets/icons/public_icons/printer%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="item_add_Btn" alignment="CENTER" buttonType="RAISED" layoutX="195.0" layoutY="27.0" prefHeight="45.0" prefWidth="145.0" ripplerFill="#09f548" style="-fx-background-color: #f50057; -fx-background-radius: 50;" text="أضافة" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri" size="23.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../Assets/icons/public_icons/add-to-cart.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

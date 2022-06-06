@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="700.0" maxWidth="1250.0" minHeight="700.0" minWidth="1250.0" prefHeight="700.0" prefWidth="1250.0" style="-fx-background-color: #00897B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Public_views.Bank_ViewController">
+   <children>
+      <AnchorPane fx:id="labelCont" layoutX="155.0" layoutY="47.0" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="1250.0" style="-fx-background-color: #263238;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="title_label" alignment="CENTER" layoutX="229.0" layoutY="17.0" text="صفحة متابعة الحسابات المالية ( الخزينة - معدل الأرباح - الأرصدة )" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Calibri Bold" size="26.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="39.0" layoutY="14.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainCont" layoutY="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00897B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <content>
+                  <AnchorPane minWidth="1250.0" prefHeight="1100.0" prefWidth="1250.0" style="-fx-background-color: #00897B;">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="920.0" prefWidth="1250.0" spacing="5.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxHeight="900.0" minHeight="900.0" prefHeight="900.0" prefWidth="1250.0" spacing="2.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <HBox alignment="CENTER" style="-fx-border-color: black;">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="95.0" prefWidth="617.0" style="-fx-background-color: #455a64; -fx-border-color: black;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="533.0" style="-fx-background-radius: 50; -fx-background-color: #fbc02d;" text="إجمالي قيمة الموجود فعليا بالمخزن الأن ( حسب سعر الشراء )" textFill="#282715">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <HBox alignment="CENTER" spacing="20.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" layoutX="675.0" layoutY="12.0" maxWidth="444.0" minWidth="350.0" prefHeight="86.0" prefWidth="434.0" style="-fx-border-color: white;">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="400.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="400.0" style="-fx-background-radius: 2;" text="إجمالي الموجود :" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Calibri Bold" size="26.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="actual_store_total_TxtF" alignment="CENTER" editable="false" focusColor="#ffe70d" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                               <font>
+                                                                  <Font name="Cambria Bold" size="19.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="95.0" prefWidth="617.0" style="-fx-background-color: #455a64; -fx-border-color: black;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="533.0" style="-fx-background-radius: 50; -fx-background-color: #fbc02d;" text="صافي الأرباح المفترض بدون أجل ( بدون حساب المخزن )" textFill="#282715">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <HBox alignment="CENTER" spacing="10.0">
+                                                   <children>
+                                                      <AnchorPane maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0">
+                                                         <children>
+                                                            <ImageView fx:id="no_store_down_image" fitHeight="60.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <image>
+                                                                  <Image url="@../../Assets/icons/public_icons/arrow-down.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <ImageView fx:id="no_store_up_image" fitHeight="60.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <image>
+                                                                  <Image url="@../../Assets/icons/public_icons/arrow-up.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </HBox.margin>
+                                                      </AnchorPane>
+                                                      <VBox alignment="CENTER" maxWidth="434.0" minWidth="136.0" prefHeight="92.0" prefWidth="136.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="400.0" minHeight="32.0" minWidth="124.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="124.0" style="-fx-background-radius: 2;" text="نسبة الأرباح :" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Calibri Bold" size="26.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="no_store_profit_ratio_TxtF" alignment="CENTER" editable="false" focusColor="#ffe70d" maxWidth="390.0" minHeight="40.0" minWidth="104.0" prefHeight="41.0" prefWidth="104.0" promptText="\% 0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20 50 10 50; -fx-border-radius: 20 50 10 50;" unFocusColor="#c3bbbb">
+                                                               <font>
+                                                                  <Font name="Cambria Bold" size="19.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" layoutX="675.0" layoutY="12.0" maxWidth="434.0" minWidth="350.0" prefHeight="86.0" prefWidth="434.0" style="-fx-border-color: white;">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="400.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="400.0" style="-fx-background-radius: 2;" text="إجمالي الصافي :" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Calibri Bold" size="26.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="clear_no_store_total_TxtF" alignment="CENTER" editable="false" focusColor="#ffe70d" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                               <font>
+                                                                  <Font name="Cambria Bold" size="19.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="16.0" layoutY="16.0" style="-fx-border-color: black;">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="95.0" prefWidth="617.0" style="-fx-background-color: #455a64; -fx-border-color: black;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="533.0" style="-fx-background-radius: 50; -fx-background-color: #fbc02d;" text="إجمالي الموجود فعليا بعد حساب الأجل" textFill="#282715">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <HBox alignment="CENTER" spacing="20.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" layoutX="675.0" layoutY="12.0" maxWidth="444.0" minWidth="350.0" prefHeight="86.0" prefWidth="434.0" style="-fx-border-color: white;">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="400.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="400.0" style="-fx-background-radius: 2;" text="إجمالي الموجود :" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Calibri Bold" size="26.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="actual_money_total_TxtF" alignment="CENTER" editable="false" focusColor="#ffe70d" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                               <font>
+                                                                  <Font name="Cambria Bold" size="19.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="95.0" prefWidth="617.0" style="-fx-background-color: #455a64; -fx-border-color: black;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="533.0" style="-fx-background-radius: 50; -fx-background-color: #fbc02d;" text="صافي الأرباح المفترض بدون أجل (  حساب قيمة المخزن )" textFill="#282715">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="25.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <HBox alignment="CENTER" spacing="10.0">
+                                                   <children>
+                                                      <AnchorPane maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0">
+                                                         <children>
+                                                            <ImageView fx:id="with_store_down_image" fitHeight="60.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <image>
+                                                                  <Image url="@../../Assets/icons/public_icons/arrow-down.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <ImageView fx:id="with_store_up_image" fitHeight="60.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <image>
+                                                                  <Image url="@../../Assets/icons/public_icons/arrow-up.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </HBox.margin>
+                                                      </AnchorPane>
+                                                      <VBox alignment="CENTER" maxWidth="434.0" minWidth="136.0" prefHeight="92.0" prefWidth="136.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="400.0" minHeight="32.0" minWidth="124.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="124.0" style="-fx-background-radius: 2;" text="نسبة الأرباح :" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Calibri Bold" size="26.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="with_store_profit_ratio_TxtF" alignment="CENTER" editable="false" focusColor="#ffe70d" maxWidth="390.0" minHeight="40.0" minWidth="104.0" prefHeight="41.0" prefWidth="104.0" promptText="\% 0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20 50 10 50; -fx-border-radius: 20 50 10 50;" unFocusColor="#c3bbbb">
+                                                               <font>
+                                                                  <Font name="Cambria Bold" size="19.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" layoutX="675.0" layoutY="12.0" maxWidth="434.0" minWidth="350.0" prefHeight="86.0" prefWidth="434.0" style="-fx-border-color: white;">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="400.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="400.0" style="-fx-background-radius: 2;" text="إجمالي الصافي :" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Calibri Bold" size="26.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="clear_with_store_total_TxtF" alignment="CENTER" editable="false" focusColor="#ffe70d" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                               <font>
+                                                                  <Font name="Cambria Bold" size="19.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                               </VBox.margin>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <VBox alignment="CENTER" prefHeight="95.0" prefWidth="417.0" style="-fx-background-color: #9ccc65; -fx-border-color: black;">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="533.0" style="-fx-background-radius: 50; -fx-background-color: #7cb342;" text="فواتير المبيعات " textFill="#282715">
+                                             <font>
+                                                <Font name="Calibri Bold" size="27.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <HBox alignment="CENTER" spacing="20.0">
+                                             <children>
+                                                <VBox alignment="CENTER" layoutX="423.0" layoutY="10.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي المتبقي لنا ( الأجل ) :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="export_remaining_total_TxtF" alignment="CENTER" editable="false" focusColor="#00ff44" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="623.0" layoutY="10.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي المحصل منها ( المستلم ) :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="export_received_total_TxtF" alignment="CENTER" editable="false" focusColor="#00ff44" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="675.0" layoutY="12.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي أرصدة فواتير المبيعات :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="export_all_total_TxtF" alignment="CENTER" editable="false" focusColor="#00ff44" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="16.0" layoutY="16.0" prefHeight="95.0" prefWidth="417.0" style="-fx-background-color: #e57373; -fx-border-color: black;">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="533.0" style="-fx-background-radius: 50; -fx-background-color: #f44336;" text="فواتير المشتريات " textFill="#282715">
+                                             <font>
+                                                <Font name="Calibri Bold" size="27.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <HBox alignment="CENTER" spacing="20.0">
+                                             <children>
+                                                <VBox alignment="CENTER" layoutX="423.0" layoutY="10.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي المتبقي علينا ( الأجل ) :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="import_remaining_total_TxtF" alignment="CENTER" editable="false" focusColor="#ff0800" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="623.0" layoutY="10.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي المدفوع منها ( المصروف ) :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="import_paid_total_TxtF" alignment="CENTER" editable="false" focusColor="#ff0800" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="675.0" layoutY="12.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي أرصدة فواتير المشتريات :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="import_all_total_TxtF" alignment="CENTER" editable="false" focusColor="#ff0800" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="16.0" layoutY="16.0" prefHeight="95.0" prefWidth="417.0" style="-fx-background-color: #9ccc65; -fx-border-color: black;">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="533.0" style="-fx-background-radius: 50; -fx-background-color: #7cb342;" text="فواتير التحصيلات المالية" textFill="#282715">
+                                             <font>
+                                                <Font name="Calibri Bold" size="27.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <HBox alignment="CENTER" spacing="20.0">
+                                             <children>
+                                                <VBox alignment="CENTER" layoutX="423.0" layoutY="10.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي أرصدة التحصيلات الأخري :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="earn_other_total_TxtF" alignment="CENTER" editable="false" focusColor="#00ff44" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="623.0" layoutY="10.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي أرصدة تحصيلات العملاء :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="earn_clients_total_TxtF" alignment="CENTER" editable="false" focusColor="#00ff44" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="675.0" layoutY="12.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي أرصدة فواتير التحصيلات  :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="earn_all_total_TxtF" alignment="CENTER" editable="false" focusColor="#00ff44" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="16.0" layoutY="304.0" prefHeight="95.0" prefWidth="417.0" style="-fx-background-color: #e57373; -fx-border-color: black;">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="32.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="533.0" style="-fx-background-radius: 50; -fx-background-color: #f44336;" text="فواتير المصروفات المالية" textFill="#282715">
+                                             <font>
+                                                <Font name="Calibri Bold" size="27.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <HBox alignment="CENTER" spacing="20.0">
+                                             <children>
+                                                <VBox alignment="CENTER" layoutX="423.0" layoutY="10.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي أرصدة المصروفات الأخري :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="spend_other_total_TxtF" alignment="CENTER" editable="false" focusColor="#ff0800" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="623.0" layoutY="10.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي أرصدة مصروفات الشركات :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="spend_companies_total_TxtF" alignment="CENTER" editable="false" focusColor="#ff0800" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="675.0" layoutY="12.0" maxWidth="350.0" minWidth="350.0" prefHeight="74.0" prefWidth="350.0" style="-fx-border-color: white;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="350.0" minHeight="32.0" minWidth="350.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="350.0" style="-fx-background-radius: 2;" text="إجمالي أرصدة فواتير المصروفات :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="26.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="spend_all_total_TxtF" alignment="CENTER" editable="false" focusColor="#ff0800" maxWidth="320.0" minHeight="40.0" minWidth="320.0" prefHeight="41.0" prefWidth="320.0" promptText="0.00" style="-fx-background-color: #f1f1f1; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" unFocusColor="#c3bbbb">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="19.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="250.0">
+                                       <children>
+                                          <JFXButton fx:id="bank_print_Btn" alignment="CENTER" buttonType="RAISED" prefHeight="45.0" prefWidth="145.0" ripplerFill="#09f548" style="-fx-background-color: #6a1b9a; -fx-background-radius: 50;" text="طباعة" textFill="WHITE">
+                                             <font>
+                                                <Font name="Calibri Bold" size="23.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Assets/icons/public_icons/printer%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
